@@ -44,16 +44,26 @@ export default function Home() {
       content: (
         <div className="space-y-6">
           <h2 className="text-2xl font-bold">Blog</h2>
-          <p className="text-muted-foreground">My blog posts will appear here.</p>
-        </div>
-      )
-    },
-    github: {
-      title: "GitHub",
-      content: (
-        <div className="space-y-6">
-          <h2 className="text-2xl font-bold">GitHub</h2>
-          <p className="text-muted-foreground">My GitHub repositories and contributions will be shown here.</p>
+          <p className="text-muted-foreground">i should really start writing more :3</p>
+          <a
+            href="https://medium.com/@medhaa.prodduturi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block max-w-md rounded-lg overflow-hidden shadow-lg border border-amber-200 hover:shadow-xl transition-shadow bg-white"
+            style={{ textDecoration: 'none' }}
+          >
+            <img
+              src="https://placehold.co/600x200/EEE/31343C?text=Blog+Thumbnail"
+              alt="Blog Thumbnail"
+              className="w-full h-40 object-cover"
+            />
+            <div className="p-4">
+              <div className="text-xl font-extrabold text-amber-900 flex items-center gap-2">
+                Blog <span className="text-base">↗</span>
+              </div>
+              <div className="inline-block bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">medium</div>
+            </div>
+          </a>
         </div>
       )
     }
@@ -68,44 +78,64 @@ export default function Home() {
           <h1 className="text-3xl font-bold mb-6">med</h1>
           
           {/* Compact Navigation */}
-          <nav className="mb-8">
-            <div className="flex items-center space-x-4">
+          <nav className="mb-2">
+            <div className="flex items-center space-x-2 pl-0.5">
               <Button 
-                variant={activeSection === "about" ? "default" : "ghost"} 
-                size="sm"
+                variant="ghost"
+                size="default"
                 onClick={() => setActiveSection("about")}
+                className={`text-lg px-2 py-1 rounded-none font-extrabold ${
+                  activeSection === "about" 
+                    ? "text-white bg-amber-800 underline decoration-2" 
+                    : "text-amber-900 hover:bg-amber-50"
+                }`}
               >
                 about me!
               </Button>
               <Button 
-                variant={activeSection === "projects" ? "default" : "ghost"} 
-                size="sm"
+                variant="ghost"
+                size="default"
                 onClick={() => setActiveSection("projects")}
+                className={`text-lg px-2 py-1 rounded-none font-extrabold ${
+                  activeSection === "projects" 
+                    ? "text-white bg-amber-800 underline decoration-2" 
+                    : "text-amber-900 hover:bg-amber-50"
+                }`}
               >
                 projects
               </Button>
               <Button 
-                variant={activeSection === "skills" ? "default" : "ghost"} 
-                size="sm"
+                variant="ghost"
+                size="default"
                 onClick={() => setActiveSection("skills")}
+                className={`text-lg px-2 py-1 rounded-none font-extrabold ${
+                  activeSection === "skills" 
+                    ? "text-white bg-amber-800 underline decoration-2" 
+                    : "text-amber-900 hover:bg-amber-50"
+                }`}
               >
                 skills
               </Button>
               <Button 
-                variant={activeSection === "blog" ? "default" : "ghost"} 
-                size="sm"
+                variant="ghost"
+                size="default"
                 onClick={() => setActiveSection("blog")}
+                className={`text-lg px-2 py-1 rounded-none font-extrabold ${
+                  activeSection === "blog" 
+                    ? "text-white bg-amber-800 underline decoration-2" 
+                    : "text-amber-900 hover:bg-amber-50"
+                }`}
               >
                 blog
               </Button>
-              <Button 
-                variant={activeSection === "github" ? "default" : "ghost"} 
-                size="sm"
-                onClick={() => setActiveSection("github")}
+              <a 
+                href="https://github.com/medprod" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-lg px-2 py-1 rounded-none font-extrabold text-amber-900 hover:bg-amber-50 inline-flex items-center"
               >
                 github
-              </Button>
-              <Button variant="outline" size="sm">theme</Button>
+              </a>
             </div>
           </nav>
         </div>
