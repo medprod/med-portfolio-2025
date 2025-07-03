@@ -62,7 +62,7 @@ export default function Home() {
       title: "Projects",
       content: (
         <div className="space-y-6">
-          <h3 className="text-lg font-bold mb-4">current projects <span role="img" aria-label="turtle">🐢</span></h3>
+          <h3 className="text-lg font-bold mb-4 underline">current projects <span role="img" aria-label="turtle">🐢</span></h3>
           <div className="space-y-8 w-full">
             <div className="flex flex-row gap-8 w-full">
               <div className="w-[48%] max-w-full">
@@ -125,7 +125,7 @@ export default function Home() {
                 >
                   <Card className="bg-white shadow-none rounded-none p-2">
                     <img
-                      src="/globe.svg"
+                      src="/8weeksql.png"
                       alt="8 Week SQL Challenge Project Thumbnail"
                       className="w-full h-28 object-cover bg-white"
                       draggable="false"
@@ -142,7 +142,7 @@ export default function Home() {
               <div className="w-[48%] max-w-full ml-auto">
                 <Card className="bg-white shadow-none rounded-none p-2">
                   <img
-                    src="/next.svg"
+                    src="/docscan.png"
                     alt="Document Scanner Project Thumbnail"
                     className="w-full h-28 object-cover bg-white"
                     draggable="false"
@@ -158,7 +158,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-12">
-            <h3 className="text-lg font-bold mb-4">past projects <span role="img" aria-label="history">📚</span></h3>
+            <h3 className="text-lg font-bold mb-4 underline">past projects <span role="img" aria-label="bunny">🐰</span></h3>
             <div className="space-y-8 w-full">
               <div className="flex flex-row gap-8 w-full">
                 <div className="w-[48%] max-w-full">
@@ -195,7 +195,7 @@ export default function Home() {
                   >
                     <Card className="bg-white shadow-none rounded-none p-2">
                       <img
-                        src="/file.svg"
+                        src="/aptly.png"
                         alt="Aptly Database Project Thumbnail"
                         className="w-full h-28 object-cover bg-white"
                         draggable="false"
