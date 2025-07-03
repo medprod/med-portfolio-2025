@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Card } from "@/components/ui/card";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
@@ -61,8 +62,77 @@ export default function Home() {
       title: "Projects",
       content: (
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold">Projects</h2>
-          <p className="text-muted-foreground">My projects will be displayed here.</p>
+          <h3 className="text-lg font-bold mb-4">current projects <span role="img" aria-label="turtle">🐢</span></h3>
+          <div className="space-y-8 w-full">
+            <div className="flex flex-row gap-8 w-full">
+              <div className="w-[48%] max-w-full">
+                <Card className="bg-white shadow-none rounded-none p-2">
+                  <img
+                    src="/file.svg"
+                    alt="Project 1 Thumbnail"
+                    className="w-full h-28 object-cover bg-white"
+                    draggable="false"
+                  />
+                  <div className="p-2 pb-1">
+                    <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                      Project One Title <span className="text-base">↗</span>
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-1 mb-0">Short description of project one goes here.</div>
+                  </div>
+                </Card>
+              </div>
+              <div className="w-[48%] max-w-full ml-auto">
+                <Card className="bg-white shadow-none rounded-none p-2">
+                  <img
+                    src="/window.svg"
+                    alt="Project 2 Thumbnail"
+                    className="w-full h-28 object-cover bg-white"
+                    draggable="false"
+                  />
+                  <div className="p-2 pb-1">
+                    <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                      Project Two Title <span className="text-base">↗</span>
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-1 mb-0">Short description of project two goes here.</div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+            <div className="flex flex-row gap-8 w-full">
+              <div className="w-[48%] max-w-full">
+                <Card className="bg-white shadow-none rounded-none p-2">
+                  <img
+                    src="/globe.svg"
+                    alt="Project 3 Thumbnail"
+                    className="w-full h-28 object-cover bg-white"
+                    draggable="false"
+                  />
+                  <div className="p-2 pb-1">
+                    <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                      Project Three Title <span className="text-base">↗</span>
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-1 mb-0">Short description of project three goes here.</div>
+                  </div>
+                </Card>
+              </div>
+              <div className="w-[48%] max-w-full ml-auto">
+                <Card className="bg-white shadow-none rounded-none p-2">
+                  <img
+                    src="/next.svg"
+                    alt="Project 4 Thumbnail"
+                    className="w-full h-28 object-cover bg-white"
+                    draggable="false"
+                  />
+                  <div className="p-2 pb-1">
+                    <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                      Project Four Title <span className="text-base">↗</span>
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-1 mb-0">Short description of project four goes here.</div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
         </div>
       )
     },
