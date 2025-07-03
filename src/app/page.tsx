@@ -66,70 +66,191 @@ export default function Home() {
           <div className="space-y-8 w-full">
             <div className="flex flex-row gap-8 w-full">
               <div className="w-[48%] max-w-full">
-                <Card className="bg-white shadow-none rounded-none p-2">
-                  <img
-                    src="/file.svg"
-                    alt="Project 1 Thumbnail"
-                    className="w-full h-28 object-cover bg-white"
-                    draggable="false"
-                  />
-                  <div className="p-2 pb-1">
-                    <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                      Project One Title <span className="text-base">↗</span>
+                <a
+                  href="https://github.com/medprod/erd-agent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <Card className="bg-white shadow-none rounded-none p-2">
+                    <img
+                      src="/file.svg"
+                      alt="ERD Agent Project Thumbnail"
+                      className="w-full h-28 object-cover bg-white"
+                      draggable="false"
+                    />
+                    <div className="p-2 pb-1">
+                      <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                        erd agent <span className="text-base">↗</span>
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-1 mb-0">LLM agent that generates an ERD diagram based on the database description.</div>
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1 mb-0">Short description of project one goes here.</div>
-                  </div>
-                </Card>
+                  </Card>
+                </a>
               </div>
               <div className="w-[48%] max-w-full ml-auto">
-                <Card className="bg-white shadow-none rounded-none p-2">
-                  <img
-                    src="/window.svg"
-                    alt="Project 2 Thumbnail"
-                    className="w-full h-28 object-cover bg-white"
-                    draggable="false"
-                  />
-                  <div className="p-2 pb-1">
-                    <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                      Project Two Title <span className="text-base">↗</span>
+                <a
+                  href="https://github.com/medprod/data-analysis-visualization-projects"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <Card className="bg-white shadow-none rounded-none p-2">
+                    <img
+                      src="/window.svg"
+                      alt="Data Visualization Project Thumbnail"
+                      className="w-full h-28 object-cover bg-white"
+                      draggable="false"
+                    />
+                    <div className="p-2 pb-1">
+                      <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                        data-viz <span className="text-base">↗</span>
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-1 mb-0">on-going analysis repo to play around with datasets</div>
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1 mb-0">Short description of project two goes here.</div>
-                  </div>
-                </Card>
+                  </Card>
+                </a>
               </div>
             </div>
             <div className="flex flex-row gap-8 w-full">
               <div className="w-[48%] max-w-full">
-                <Card className="bg-white shadow-none rounded-none p-2">
-                  <img
-                    src="/globe.svg"
-                    alt="Project 3 Thumbnail"
-                    className="w-full h-28 object-cover bg-white"
-                    draggable="false"
-                  />
-                  <div className="p-2 pb-1">
-                    <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                      Project Three Title <span className="text-base">↗</span>
+                <a
+                  href="https://github.com/medprod/8-week-sql"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <Card className="bg-white shadow-none rounded-none p-2">
+                    <img
+                      src="/globe.svg"
+                      alt="8 Week SQL Challenge Project Thumbnail"
+                      className="w-full h-28 object-cover bg-white"
+                      draggable="false"
+                    />
+                    <div className="p-2 pb-1">
+                      <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                        eight-week-sql <span className="text-base">↗</span>
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-1 mb-0">8 Week SQL Challenge</div>
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1 mb-0">Short description of project three goes here.</div>
-                  </div>
-                </Card>
+                  </Card>
+                </a>
               </div>
               <div className="w-[48%] max-w-full ml-auto">
                 <Card className="bg-white shadow-none rounded-none p-2">
                   <img
                     src="/next.svg"
-                    alt="Project 4 Thumbnail"
+                    alt="Document Scanner Project Thumbnail"
                     className="w-full h-28 object-cover bg-white"
                     draggable="false"
                   />
                   <div className="p-2 pb-1">
                     <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                      Project Four Title <span className="text-base">↗</span>
+                      document scanner
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1 mb-0">Short description of project four goes here.</div>
+                    <div className="text-xs text-muted-foreground mt-1 mb-0">exploring openCV</div>
                   </div>
                 </Card>
+              </div>
+            </div>
+          </div>
+          <div className="mt-12">
+            <h3 className="text-lg font-bold mb-4">past projects <span role="img" aria-label="history">📚</span></h3>
+            <div className="space-y-8 w-full">
+              <div className="flex flex-row gap-8 w-full">
+                <div className="w-[48%] max-w-full">
+                  <a
+                    href="https://github.com/medprod/Aptly"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card className="bg-white shadow-none rounded-none p-2">
+                      <img
+                        src="/file.svg"
+                        alt="Aptly Database Project Thumbnail"
+                        className="w-full h-28 object-cover bg-white"
+                        draggable="false"
+                      />
+                      <div className="p-2 pb-1">
+                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          Aptly DB <span className="text-base">↗</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1 mb-0">a database with SQL Server for an apartment tracking system.</div>
+                      </div>
+                    </Card>
+                  </a>
+                </div>
+                <div className="w-[48%] max-w-full ml-auto">
+                  <a
+                    href="https://github.com/medprod/redfin-analytics"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card className="bg-white shadow-none rounded-none p-2">
+                      <img
+                        src="/window.svg"
+                        alt="Redfin ETL Pipeline Project Thumbnail"
+                        className="w-full h-28 object-cover bg-white"
+                        draggable="false"
+                      />
+                      <div className="p-2 pb-1">
+                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          redfin-etl-pipeline <span className="text-base">↗</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1 mb-0">ETL process using apache airflow and amazon S3 bucket</div>
+                      </div>
+                    </Card>
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-row gap-8 w-full">
+                <div className="w-[48%] max-w-full">
+                  <a
+                    href="https://github.com/medprod/data-visualization-R"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card className="bg-white shadow-none rounded-none p-2">
+                      <img
+                        src="/globe.svg"
+                        alt="Economist Plot Project Thumbnail"
+                        className="w-full h-28 object-cover bg-white"
+                        draggable="false"
+                      />
+                      <div className="p-2 pb-1">
+                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          economist-plot <span className="text-base">↗</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1 mb-0">Recreating a plot from The Economist using R programming.</div>
+                      </div>
+                    </Card>
+                  </a>
+                </div>
+                <div className="w-[48%] max-w-full ml-auto">
+                  <Card className="bg-white shadow-none rounded-none p-2">
+                    <img
+                      src="/next.svg"
+                      alt="Past Project 4 Thumbnail"
+                      className="w-full h-28 object-cover bg-white"
+                      draggable="false"
+                    />
+                    <div className="p-2 pb-1">
+                      <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                        Past Project Four
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-1 mb-0">Description of past project four.</div>
+                    </div>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>
