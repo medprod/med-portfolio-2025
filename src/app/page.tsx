@@ -75,7 +75,7 @@ export default function Home() {
                 >
                   <Card className="bg-white shadow-none rounded-none p-2">
                     <img
-                      src="/file.svg"
+                      src="/erd-agent.png"
                       alt="ERD Agent Project Thumbnail"
                       className="w-full h-28 object-cover bg-white"
                       draggable="false"
@@ -99,7 +99,7 @@ export default function Home() {
                 >
                   <Card className="bg-white shadow-none rounded-none p-2">
                     <img
-                      src="/window.svg"
+                      src="/dataviz.png"
                       alt="Data Visualization Project Thumbnail"
                       className="w-full h-28 object-cover bg-white"
                       draggable="false"
@@ -163,6 +163,30 @@ export default function Home() {
               <div className="flex flex-row gap-8 w-full">
                 <div className="w-[48%] max-w-full">
                   <a
+                    href="https://github.com/medprod/Shell-AI-Agent-Build-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card className="bg-white shadow-none rounded-none p-2">
+                      <img
+                        src="/shell.png"
+                        alt="Shell AI Agent Project Thumbnail"
+                        className="w-full h-28 object-cover bg-white"
+                        draggable="false"
+                      />
+                      <div className="p-2 pb-1">
+                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          shell ai agent <span className="text-base">↗</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1 mb-0">my first ai agent. reads the file, writes in the file, and executes shell command.</div>
+                      </div>
+                    </Card>
+                  </a>
+                </div>
+                <div className="w-[48%] max-w-full ml-auto">
+                  <a
                     href="https://github.com/medprod/Aptly"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -185,7 +209,9 @@ export default function Home() {
                     </Card>
                   </a>
                 </div>
-                <div className="w-[48%] max-w-full ml-auto">
+              </div>
+              <div className="flex flex-row gap-8 w-full">
+                <div className="w-[48%] max-w-full">
                   <a
                     href="https://github.com/medprod/redfin-analytics"
                     target="_blank"
@@ -195,7 +221,7 @@ export default function Home() {
                   >
                     <Card className="bg-white shadow-none rounded-none p-2">
                       <img
-                        src="/window.svg"
+                        src="/redfin.png"
                         alt="Redfin ETL Pipeline Project Thumbnail"
                         className="w-full h-28 object-cover bg-white"
                         draggable="false"
@@ -209,9 +235,7 @@ export default function Home() {
                     </Card>
                   </a>
                 </div>
-              </div>
-              <div className="flex flex-row gap-8 w-full">
-                <div className="w-[48%] max-w-full">
+                <div className="w-[48%] max-w-full ml-auto">
                   <a
                     href="https://github.com/medprod/data-visualization-R"
                     target="_blank"
@@ -221,7 +245,7 @@ export default function Home() {
                   >
                     <Card className="bg-white shadow-none rounded-none p-2">
                       <img
-                        src="/globe.svg"
+                        src="/rplot.png"
                         alt="Economist Plot Project Thumbnail"
                         className="w-full h-28 object-cover bg-white"
                         draggable="false"
@@ -235,21 +259,81 @@ export default function Home() {
                     </Card>
                   </a>
                 </div>
-                <div className="w-[48%] max-w-full ml-auto">
-                  <Card className="bg-white shadow-none rounded-none p-2">
-                    <img
-                      src="/next.svg"
-                      alt="Past Project 4 Thumbnail"
-                      className="w-full h-28 object-cover bg-white"
-                      draggable="false"
-                    />
-                    <div className="p-2 pb-1">
-                      <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                        Past Project Four
+              </div>
+              <div className="flex flex-row gap-8 w-full">
+                <div className="w-[48%] max-w-full">
+                  <a
+                    href="https://github.com/medprod/OpenWeather-Airflow"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card className="bg-white shadow-none rounded-none p-2">
+                      <img
+                        src="/openweather.png"
+                        alt="OpenWeather ETL Project Thumbnail"
+                        className="w-full h-28 object-cover bg-white"
+                        draggable="false"
+                      />
+                      <div className="p-2 pb-1">
+                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          openweather-etl <span className="text-base">↗</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1 mb-0">used OpenWeather Map API and applied transformations for data modeling, orchestrating an ETL process with Apache Airflow</div>
                       </div>
-                      <div className="text-xs text-muted-foreground mt-1 mb-0">Description of past project four.</div>
-                    </div>
-                  </Card>
+                    </Card>
+                  </a>
+                </div>
+                <div className="w-[48%] max-w-full ml-auto">
+                  <a
+                    href="https://github.com/medprod/analysis-of-a-financial-time-series"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card className="bg-white shadow-none rounded-none p-2">
+                      <img
+                        src="/time-series.png"
+                        alt="Time Series Analysis Project Thumbnail"
+                        className="w-full h-28 object-cover bg-white"
+                        draggable="false"
+                      />
+                      <div className="p-2 pb-1">
+                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          time-series <span className="text-base">↗</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1 mb-0">Implemented 3 different models - the ARMA model, ARIMA model, and the SARIMA model - to find the best time series model for stock prediction.</div>
+                      </div>
+                    </Card>
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-row gap-8 w-full">
+                <div className="w-[48%] max-w-full">
+                  <a
+                    href="https://github.com/medprod/word-co-occurrence"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card className="bg-white shadow-none rounded-none p-2">
+                      <img
+                        src="/word-co-occur.png"
+                        alt="Word Co-occurrence Project Thumbnail"
+                        className="w-full h-28 object-cover bg-white"
+                        draggable="false"
+                      />
+                      <div className="p-2 pb-1">
+                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          word-co-occurrences <span className="text-base">↗</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1 mb-0">Determining if word co-occurrence in text files is fluke or real.</div>
+                      </div>
+                    </Card>
+                  </a>
                 </div>
               </div>
             </div>
