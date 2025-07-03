@@ -17,7 +17,7 @@ export default function Home() {
             I call myself an analytics engineer (i'm trying to be one, atleast).
           </p>
           <div className="text-black font-semibold">
-            Some (fun?) facts about me:
+            I love designing and implementing new databases. I'll happily map out ER diagrams and model data because that's where I get to be both logical and creative! Here are some (fun?) facts about me:
             <ul className="list-disc list-inside mt-2 space-y-1">
               <li>I love cows & I will own a few one day. Dream pets.</li>
               <li>The ultimate dream is to work within the intersection of media & tech!</li>
@@ -466,7 +466,14 @@ export default function Home() {
       title: "Blog",
       content: (
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold">some stuff i wrote</h2>
+          <h3 className="text-lg font-bold mb-4">something that stuck with me</h3>
+          <p className="text-xs font-semibold text-muted-foreground mt-4 max-w-md text-justify">
+          A professor once told me that all of us fit somewhere on the normal distribution curve. When it comes to love and relationships, he explained, that experiences vary widely - some fall at the very bottom, like abusive relationships, while others are rare and extraordinary, like magical, out-of-this-world connections that land in the top 0.1%. Not everyone gets to experience that rare kind of love, which is why it's so special.
+          </p>
+          <p className="text-xs font-semibold text-muted-foreground mt-4 max-w-md text-justify">
+          That idea really stuck with me. For most of my life, I've been trying to figure out where I want to be on that curve. There's this constant back-and-forth in my mind: Do I want to be ordinary, right in the middle? Or do I want to belong to that elusive 0.1%? I'm sure most people dream of that top tier, and that's totally valid. But sometimes, I find myself wondering if the ordinary moments - those quieter, more common experiences - that make up most of life, are becoming rare in their own way.
+          </p>
+          <h2 className="text-2xl font-bold mt-8">my blogs!</h2>
           <p className="text-muted-foreground">i should probably pick this up again :3</p>
           <button
             type="button"
