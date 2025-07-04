@@ -13,8 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Medha - Portfolio",
-  description: "Full Stack Developer & Creative Problem Solver",
+  title: "Medha - Analytics Engineer Portfolio",
+  description: "Analytics Engineer passionate about data, databases, and making data work for us. SQL enthusiast, ETL pipeline builder, and data visualization creator.",
+  keywords: ["analytics engineer", "data engineering", "SQL", "ETL", "data visualization", "database design"],
+  authors: [{ name: "Medha Prodduturi" }],
+  openGraph: {
+    title: "Medha - Analytics Engineer Portfolio",
+    description: "Analytics Engineer passionate about data, databases, and making data work for us. SQL enthusiast, ETL pipeline builder, and data visualization creator.",
+    type: "website",
+    url: "https://medprod.vercel.app",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Medha - Analytics Engineer Portfolio",
+    description: "Analytics Engineer passionate about data, databases, and making data work for us.",
+  },
 };
 
 export default function RootLayout({
