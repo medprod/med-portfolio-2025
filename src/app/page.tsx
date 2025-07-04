@@ -11,12 +11,12 @@ export default function Home() {
     about: {
       title: "About Me",
       content: (
-        <div className="space-y-6">
-          <h2 className="text-3xl font-bold">hi!</h2>
-          <p className="text-lg font-bold text-muted-foreground">
+        <div className="space-y-4 sm:space-y-6">
+          <h2 className="text-2xl sm:text-3xl font-bold">hi!</h2>
+          <p className="text-base sm:text-lg font-bold text-muted-foreground">
             I call myself an analytics engineer (i'm trying to be one, atleast).
           </p>
-          <div className="text-black font-semibold">
+          <div className="text-black font-semibold text-sm sm:text-base">
             I also love designing and implementing new databases. I'll happily map out ER diagrams and model data because that's where I get to be both logical and creative! Here are some random (fun?) facts about me:
             <ul className="list-disc list-inside mt-2 space-y-1">
               <li>I love cows & I will own a few one day. Dream pets.</li>
@@ -25,7 +25,7 @@ export default function Home() {
               <li>My life depends on my Notion.</li>
             </ul>
           </div>
-          <p className="text-lg text-muted-foreground font-semibold mt-4">
+          <p className="text-base sm:text-lg text-muted-foreground font-semibold mt-4">
             I keep track of projects I work on {' '}
             <button
               type="button"
@@ -37,17 +37,17 @@ export default function Home() {
             </button>. Check them out!
           </p>
           <div className="mt-6">
-            <div className="text-base italic text-blue-600 font-semibold mb-2">let's make data work for us!</div>
+            <div className="text-sm sm:text-base italic text-blue-600 font-semibold mb-2">let's make data work for us!</div>
             <div className="space-y-2">
               <a
                 href="mailto:medhaa.prodduturi@gmail.com?subject=Hello%20Medha&body=Hi%20Medha%2C%20..."
-                className="block text-blue-600 italic text-sm font-semibold hover:underline"
+                className="block text-blue-600 italic text-xs sm:text-sm font-semibold hover:underline"
               >
                 medhaa.prodduturi@gmail.com
               </a>
               <a
                 href="https://www.linkedin.com/in/medha-prodduturi/"
-                className="block text-blue-600 italic text-sm font-semibold hover:underline"
+                className="block text-blue-600 italic text-xs sm:text-sm font-semibold hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -55,18 +55,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="flex justify-center mt-8">
-            <div className="relative w-[540px] h-[440px]">
-              {/* Left large */}
-              <div className="absolute top-24 left-0 w-48 h-48 bg-gray-200 rounded-lg shadow-md border-2 border-white z-30 overflow-hidden flex items-center justify-center">
-                <img src="/photo1.png" alt="Photo 1" className="w-full h-full object-cover" />
-              </div>
-              {/* Bottom large, vertically aligned with Photo 2, horizontally aligned with Photo 3 */}
-              <div className="absolute top-16 left-56 w-64 h-64 bg-gray-200 rounded-lg shadow-md border-2 border-white z-50 overflow-hidden flex items-center justify-center">
-                <img src="/photo4.png" alt="Photo 4" className="w-full h-full object-cover" />
-              </div>
-            </div>
-          </div>
+
         </div>
       )
     },
@@ -74,10 +63,10 @@ export default function Home() {
       title: "Projects",
       content: (
         <div className="space-y-6">
-          <h3 className="text-lg font-bold mb-4 underline">current projects <span role="img" aria-label="turtle">🐢</span></h3>
-          <div className="space-y-8 w-full">
-            <div className="flex flex-row gap-8 w-full">
-              <div className="w-[48%] max-w-full">
+          <h3 className="text-base sm:text-lg font-bold mb-4 underline">current projects <span role="img" aria-label="turtle">🐢</span></h3>
+          <div className="space-y-6 sm:space-y-8 w-full">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
+              <div className="w-full sm:w-[48%] max-w-full">
                 <a
                   href="https://github.com/medprod/erd-agent"
                   target="_blank"
@@ -93,15 +82,15 @@ export default function Home() {
                       draggable="false"
                     />
                     <div className="p-2 pb-1">
-                      <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                        erd agent <span className="text-base">↗</span>
+                      <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                        erd agent <span className="text-sm sm:text-base">↗</span>
                       </div>
                       <div className="text-xs text-muted-foreground mt-1 mb-0">LLM agent that generates an ERD diagram based on the database description.</div>
                     </div>
                   </Card>
                 </a>
               </div>
-              <div className="w-[48%] max-w-full ml-auto">
+              <div className="w-full sm:w-[48%] max-w-full sm:ml-auto">
                 <a
                   href="https://github.com/medprod/data-analysis-visualization-projects"
                   target="_blank"
@@ -117,8 +106,8 @@ export default function Home() {
                       draggable="false"
                     />
                     <div className="p-2 pb-1">
-                      <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                        data-viz <span className="text-base">↗</span>
+                      <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                        data-viz <span className="text-sm sm:text-base">↗</span>
                       </div>
                       <div className="text-xs text-muted-foreground mt-1 mb-0">on-going analysis repo to play around with datasets</div>
                     </div>
@@ -126,8 +115,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="flex flex-row gap-8 w-full">
-              <div className="w-[48%] max-w-full">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
+              <div className="w-full sm:w-[48%] max-w-full">
                 <a
                   href="https://github.com/medprod/8-week-sql"
                   target="_blank"
@@ -143,15 +132,15 @@ export default function Home() {
                       draggable="false"
                     />
                     <div className="p-2 pb-1">
-                      <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                        eight-week-sql <span className="text-base">↗</span>
+                      <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                        eight-week-sql <span className="text-sm sm:text-base">↗</span>
                       </div>
                       <div className="text-xs text-muted-foreground mt-1 mb-0">8 Week SQL Challenge</div>
                     </div>
                   </Card>
                 </a>
               </div>
-              <div className="w-[48%] max-w-full ml-auto">
+              <div className="w-full sm:w-[48%] max-w-full sm:ml-auto">
                 <Card className="bg-white shadow-none rounded-none p-2">
                   <img
                     src="/docscan.png"
@@ -160,7 +149,7 @@ export default function Home() {
                     draggable="false"
                   />
                   <div className="p-2 pb-1">
-                    <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                    <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
                       document scanner
                     </div>
                     <div className="text-xs text-muted-foreground mt-1 mb-0">exploring openCV</div>
@@ -170,10 +159,10 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-12">
-            <h3 className="text-lg font-bold mb-4 underline">past projects <span role="img" aria-label="bunny">🐰</span></h3>
-            <div className="space-y-8 w-full">
-              <div className="flex flex-row gap-8 w-full">
-                <div className="w-[48%] max-w-full">
+            <h3 className="text-base sm:text-lg font-bold mb-4 underline">past projects <span role="img" aria-label="bunny">🐰</span></h3>
+            <div className="space-y-6 sm:space-y-8 w-full">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
+                <div className="w-full sm:w-[48%] max-w-full">
                   <a
                     href="https://github.com/medprod/Shell-AI-Agent-Build-1"
                     target="_blank"
@@ -189,15 +178,15 @@ export default function Home() {
                         draggable="false"
                       />
                       <div className="p-2 pb-1">
-                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                          shell ai agent <span className="text-base">↗</span>
+                        <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          shell ai agent <span className="text-sm sm:text-base">↗</span>
                         </div>
                         <div className="text-xs text-muted-foreground mt-1 mb-0">my first ai agent. reads the file, writes in the file, and executes shell command.</div>
                       </div>
                     </Card>
                   </a>
                 </div>
-                <div className="w-[48%] max-w-full ml-auto">
+                <div className="w-full sm:w-[48%] max-w-full sm:ml-auto">
                   <a
                     href="https://github.com/medprod/Aptly"
                     target="_blank"
@@ -213,8 +202,8 @@ export default function Home() {
                         draggable="false"
                       />
                       <div className="p-2 pb-1">
-                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                          Aptly DB <span className="text-base">↗</span>
+                        <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          Aptly DB <span className="text-sm sm:text-base">↗</span>
                         </div>
                         <div className="text-xs text-muted-foreground mt-1 mb-0">a database with SQL Server for an apartment tracking system.</div>
                       </div>
@@ -222,8 +211,8 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-row gap-8 w-full">
-                <div className="w-[48%] max-w-full">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
+                <div className="w-full sm:w-[48%] max-w-full">
                   <a
                     href="https://github.com/medprod/redfin-analytics"
                     target="_blank"
@@ -239,15 +228,15 @@ export default function Home() {
                         draggable="false"
                       />
                       <div className="p-2 pb-1">
-                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                          redfin-etl-pipeline <span className="text-base">↗</span>
+                        <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          redfin-etl-pipeline <span className="text-sm sm:text-base">↗</span>
                         </div>
                         <div className="text-xs text-muted-foreground mt-1 mb-0">ETL process using apache airflow and amazon S3 bucket</div>
                       </div>
                     </Card>
                   </a>
                 </div>
-                <div className="w-[48%] max-w-full ml-auto">
+                <div className="w-full sm:w-[48%] max-w-full sm:ml-auto">
                   <a
                     href="https://github.com/medprod/data-visualization-R"
                     target="_blank"
@@ -263,8 +252,8 @@ export default function Home() {
                         draggable="false"
                       />
                       <div className="p-2 pb-1">
-                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                          economist-plot <span className="text-base">↗</span>
+                        <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          economist-plot <span className="text-sm sm:text-base">↗</span>
                         </div>
                         <div className="text-xs text-muted-foreground mt-1 mb-0">Recreating a plot from The Economist using R programming.</div>
                       </div>
@@ -272,8 +261,8 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-row gap-8 w-full">
-                <div className="w-[48%] max-w-full">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
+                <div className="w-full sm:w-[48%] max-w-full">
                   <a
                     href="https://github.com/medprod/OpenWeather-Airflow"
                     target="_blank"
@@ -289,15 +278,15 @@ export default function Home() {
                         draggable="false"
                       />
                       <div className="p-2 pb-1">
-                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                          openweather-etl <span className="text-base">↗</span>
+                        <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          openweather-etl <span className="text-sm sm:text-base">↗</span>
                         </div>
                         <div className="text-xs text-muted-foreground mt-1 mb-0">used OpenWeather Map API and applied transformations for data modeling, orchestrating an ETL process with Apache Airflow</div>
                       </div>
                     </Card>
                   </a>
                 </div>
-                <div className="w-[48%] max-w-full ml-auto">
+                <div className="w-full sm:w-[48%] max-w-full sm:ml-auto">
                   <a
                     href="https://github.com/medprod/analysis-of-a-financial-time-series"
                     target="_blank"
@@ -313,8 +302,8 @@ export default function Home() {
                         draggable="false"
                       />
                       <div className="p-2 pb-1">
-                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                          time-series <span className="text-base">↗</span>
+                        <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          time-series <span className="text-sm sm:text-base">↗</span>
                         </div>
                         <div className="text-xs text-muted-foreground mt-1 mb-0">Implemented 3 different models - the ARMA model, ARIMA model, and the SARIMA model - to find the best time series model for stock prediction.</div>
                       </div>
@@ -322,8 +311,8 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-row gap-8 w-full">
-                <div className="w-[48%] max-w-full">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
+                <div className="w-full sm:w-[48%] max-w-full">
                   <a
                     href="https://github.com/medprod/word-co-occurrence"
                     target="_blank"
@@ -339,8 +328,8 @@ export default function Home() {
                         draggable="false"
                       />
                       <div className="p-2 pb-1">
-                        <div className="text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                          word-co-occurrences <span className="text-base">↗</span>
+                        <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          word-co-occurrences <span className="text-sm sm:text-base">↗</span>
                         </div>
                         <div className="text-xs text-muted-foreground mt-1 mb-0">Determining if word co-occurrence in text files is fluke or real.</div>
                       </div>
@@ -357,26 +346,26 @@ export default function Home() {
       title: "Skills",
       content: (
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold">some of my skills</h2>
+          <h2 className="text-xl sm:text-2xl font-bold">some of my skills</h2>
           <div className="flex flex-wrap gap-2">
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">Python</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">SQL Server</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">Postgre</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">mySQL</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">Tableau</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">Lucidchart</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">Airflow</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">BigQuery</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">ETL</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">CI/CD</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">Azure Data Factory</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">Azure DevOps</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">GIT</span>
-            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-3 py-1 rounded">Agile</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">Python</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">SQL Server</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">Postgre</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">mySQL</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">Tableau</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">Lucidchart</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">Airflow</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">BigQuery</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">ETL</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">CI/CD</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">Azure Data Factory</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">Azure DevOps</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">GIT</span>
+            <span className="bg-amber-100 text-amber-900 text-xs font-semibold px-2 sm:px-3 py-1 rounded">Agile</span>
           </div>
           <div className="mt-12">
-            <h3 className="text-lg font-bold mb-2">Certifications</h3>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-6 w-full">
+            <h3 className="text-base sm:text-lg font-bold mb-2">Certifications</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-x-8 sm:gap-y-6 w-full">
               <a
                 href=""
                 target="_blank"
@@ -478,30 +467,30 @@ export default function Home() {
       title: "Blog",
       content: (
         <div className="space-y-6">
-          <h3 className="text-lg font-bold mb-4">something that stuck with me</h3>
-          <p className="text-xs font-semibold text-muted-foreground mt-4 max-w-md text-justify">
-          A professor once told me that all of us fit somewhere on the normal distribution curve. When it comes to love and relationships, he explained, experiences vary widely - some fall at the very bottom, like abusive relationships, while others are rare and extraordinary, like magical, out-of-this-world connections that land in the top 0.1%. Not everyone gets to experience that rare kind of love, which is why it's so special.
+          <h3 className="text-base sm:text-lg font-bold mb-4">something that stuck with me</h3>
+          <p className="text-xs font-semibold text-muted-foreground mt-4 max-w-full sm:max-w-md text-justify">
+          A professor once told me that all of us fit somewhere on the normal distribution curve. When it comes to love and relationships, he explained, experiences vary widely - some fall at the very bottom while others are rare and extraordinary, like magical, out-of-this-world connections that land in the top 0.1%. Not everyone gets to experience that rare kind of love, which is why it's so special.
           </p>
-          <p className="text-xs font-semibold text-muted-foreground mt-4 max-w-md text-justify">
+          <p className="text-xs font-semibold text-muted-foreground mt-4 max-w-full sm:max-w-md text-justify">
           That idea really stuck with me. I want to belong to that elusive 0.1% in meaning, in connection, and in the work I do. I want to build a life that's intentional and deeply aligned, even if it takes time to find. This is just a part of that journey.
           </p>
-          <h2 className="text-2xl font-bold">my blogs!</h2>
+          <h2 className="text-xl sm:text-2xl font-bold">my blogs!</h2>
           <p className="text-muted-foreground">i should probably pick this up again :3</p>
           <button
             type="button"
             onClick={() => window.open('https://medium.com/@medhaa.prodduturi', 'blogPopup', 'width=800,height=600')}
-            className="block max-w-md rounded-lg overflow-hidden shadow-lg border border-amber-200 hover:shadow-xl transition-shadow bg-white text-left w-full"
+            className="block max-w-full sm:max-w-md rounded-lg overflow-hidden shadow-lg border border-amber-200 hover:shadow-xl transition-shadow bg-white text-left w-full"
             style={{ textDecoration: 'none' }}
           >
             <img
               src="/blog-thumbnail.png"
               alt="Blog Thumbnail"
-              className="w-full h-40 object-cover bg-white"
+              className="w-full h-32 sm:h-40 object-cover bg-white"
               draggable="false"
             />
-            <div className="p-4">
-              <div className="text-base font-extrabold text-amber-900 flex items-center gap-2">
-                Blog <span className="text-base">↗</span>
+            <div className="p-3 sm:p-4">
+              <div className="text-sm sm:text-base font-extrabold text-amber-900 flex items-center gap-2">
+                Blog <span className="text-sm sm:text-base">↗</span>
               </div>
               <div className="inline-block bg-amber-900 text-white text-xs font-bold px-2 py-1 rounded">medium</div>
             </div>
@@ -514,19 +503,19 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Main Content */}
-      <main className="max-w-[65ch] mx-auto px-5 py-8">
+      <main className="max-w-[65ch] mx-auto px-4 sm:px-5 py-6 sm:py-8">
         {/* Header with Name and Navigation */}
         <div className="pt-2 pb-2">
-          <h1 className="text-3xl font-bold mb-2">medha 🐮🐻</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold mb-2">medha 🐮🐻</h1>
           
           {/* Compact Navigation */}
           <nav className="mb-1">
-            <div className="flex items-center space-x-2 pl-0.5">
+            <div className="flex flex-wrap items-center gap-1 sm:gap-2 pl-0.5">
               <Button 
                 variant="ghost"
                 size="default"
                 onClick={() => setActiveSection("about")}
-                className={`text-lg px-2 py-1 rounded-none font-extrabold ${
+                className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
                   activeSection === "about" 
                     ? "text-white bg-amber-800 underline decoration-2" 
                     : "text-amber-900 hover:bg-amber-50"
@@ -538,7 +527,7 @@ export default function Home() {
                 variant="ghost"
                 size="default"
                 onClick={() => setActiveSection("projects")}
-                className={`text-lg px-2 py-1 rounded-none font-extrabold ${
+                className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
                   activeSection === "projects" 
                     ? "text-white bg-amber-800 underline decoration-2" 
                     : "text-amber-900 hover:bg-amber-50"
@@ -550,7 +539,7 @@ export default function Home() {
                 variant="ghost"
                 size="default"
                 onClick={() => setActiveSection("skills")}
-                className={`text-lg px-2 py-1 rounded-none font-extrabold ${
+                className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
                   activeSection === "skills" 
                     ? "text-white bg-amber-800 underline decoration-2" 
                     : "text-amber-900 hover:bg-amber-50"
@@ -562,7 +551,7 @@ export default function Home() {
                 variant="ghost"
                 size="default"
                 onClick={() => setActiveSection("blog")}
-                className={`text-lg px-2 py-1 rounded-none font-extrabold ${
+                className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
                   activeSection === "blog" 
                     ? "text-white bg-amber-800 underline decoration-2" 
                     : "text-amber-900 hover:bg-amber-50"
@@ -573,7 +562,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => window.open('https://github.com/medprod', 'githubPopup', 'width=800,height=600')}
-                className="text-lg px-2 py-1 rounded-none font-extrabold text-amber-900 hover:bg-amber-50 inline-flex items-center"
+                className="text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold text-amber-900 hover:bg-amber-50 inline-flex items-center"
               >
                 github
               </button>
