@@ -55,6 +55,20 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <div className="flex justify-center mt-8">
+            <div className="relative w-[540px] h-[440px]">
+              {/* Left large */}
+              <div className="absolute top-16 left-[-48px] w-56 h-56 bg-gray-200 rounded-lg shadow-md border-2 border-white z-30 overflow-hidden flex items-center justify-center">
+                <img src="/photo1.png" alt="Photo 1" className="w-full h-full object-cover" />
+              </div>
+              {/* Center large (behind others) */}
+              <div className="absolute top-6 left-40 w-48 h-48 bg-gray-200 rounded-lg shadow-md border-2 border-white z-10 flex items-center justify-center text-gray-500 text-xl">Photo 2</div>
+              {/* Right large, bottom aligned with Photo 4 */}
+              <div className="absolute top-20 right-0 w-48 h-48 bg-gray-200 rounded-lg shadow-md border-2 border-white z-40 flex items-center justify-center text-gray-500 text-xl">Photo 3</div>
+              {/* Bottom large, vertically aligned with Photo 2, horizontally aligned with Photo 3 */}
+              <div className="absolute top-[220px] left-40 w-48 h-48 bg-gray-200 rounded-lg shadow-md border-2 border-white z-50 flex items-center justify-center text-gray-500 text-xl">Photo 4</div>
+            </div>
+          </div>
         </div>
       )
     },
@@ -471,7 +485,7 @@ export default function Home() {
           A professor once told me that all of us fit somewhere on the normal distribution curve. When it comes to love and relationships, he explained, experiences vary widely - some fall at the very bottom, like abusive relationships, while others are rare and extraordinary, like magical, out-of-this-world connections that land in the top 0.1%. Not everyone gets to experience that rare kind of love, which is why it's so special.
           </p>
           <p className="text-xs font-semibold text-muted-foreground mt-4 max-w-md text-justify">
-          That idea really stuck with me. I want to belong to that elusive 0.1% in meaning, in connection, and in the work I do. I want to build a life that's intentional, and deeply aligned, even if it takes time to find. This is just a part of that journey.
+          That idea really stuck with me. I want to belong to that elusive 0.1% in meaning, in connection, and in the work I do. I want to build a life that's intentional and deeply aligned, even if it takes time to find. This is just a part of that journey.
           </p>
           <h2 className="text-2xl font-bold">my blogs!</h2>
           <p className="text-muted-foreground">i should probably pick this up again :3</p>
