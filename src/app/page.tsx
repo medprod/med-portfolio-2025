@@ -58,15 +58,13 @@ export default function Home() {
           <div className="flex justify-center mt-8">
             <div className="relative w-[540px] h-[440px]">
               {/* Left large */}
-              <div className="absolute top-16 left-[-48px] w-56 h-56 bg-gray-200 rounded-lg shadow-md border-2 border-white z-30 overflow-hidden flex items-center justify-center">
+              <div className="absolute top-24 left-0 w-48 h-48 bg-gray-200 rounded-lg shadow-md border-2 border-white z-30 overflow-hidden flex items-center justify-center">
                 <img src="/photo1.png" alt="Photo 1" className="w-full h-full object-cover" />
               </div>
-              {/* Center large (behind others) */}
-              <div className="absolute top-6 left-40 w-48 h-48 bg-gray-200 rounded-lg shadow-md border-2 border-white z-10 flex items-center justify-center text-gray-500 text-xl">Photo 2</div>
-              {/* Right large, bottom aligned with Photo 4 */}
-              <div className="absolute top-20 right-0 w-48 h-48 bg-gray-200 rounded-lg shadow-md border-2 border-white z-40 flex items-center justify-center text-gray-500 text-xl">Photo 3</div>
               {/* Bottom large, vertically aligned with Photo 2, horizontally aligned with Photo 3 */}
-              <div className="absolute top-[220px] left-40 w-48 h-48 bg-gray-200 rounded-lg shadow-md border-2 border-white z-50 flex items-center justify-center text-gray-500 text-xl">Photo 4</div>
+              <div className="absolute top-16 left-56 w-64 h-64 bg-gray-200 rounded-lg shadow-md border-2 border-white z-50 overflow-hidden flex items-center justify-center">
+                <img src="/photo4.png" alt="Photo 4" className="w-full h-full object-cover" />
+              </div>
             </div>
           </div>
         </div>
