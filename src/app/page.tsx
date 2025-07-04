@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -14,10 +15,10 @@ export default function Home() {
         <div className="space-y-4 sm:space-y-6">
           <h2 className="text-2xl sm:text-3xl font-bold">hi!</h2>
           <p className="text-base sm:text-lg font-bold text-muted-foreground">
-            I call myself an analytics engineer (i'm trying to be one, atleast).
+            I call myself an analytics engineer (i&apos;m trying to be one, atleast).
           </p>
           <div className="text-black font-semibold text-sm sm:text-base">
-            I also love designing and implementing new databases. I'll happily map out ER diagrams and model data because that's where I get to be both logical and creative! Here are some random (fun?) facts about me:
+            I also love designing and implementing new databases. I&apos;ll happily map out ER diagrams and model data because that&apos;s where I get to be both logical and creative! Here are some random (fun?) facts about me:
             <ul className="list-disc list-inside mt-2 space-y-1">
               <li>I love cows & I will own a few one day. Dream pets.</li>
               <li>The ultimate dream is to work within the intersection of media & tech!</li>
@@ -37,7 +38,7 @@ export default function Home() {
             </button>. Check them out!
           </p>
           <div className="mt-6">
-            <div className="text-sm sm:text-base italic text-blue-600 font-semibold mb-2">let's make data work for us!</div>
+            <div className="text-sm sm:text-base italic text-blue-600 font-semibold mb-2">let&apos;s make data work for us!</div>
             <div className="space-y-2">
               <a
                 href="mailto:medhaa.prodduturi@gmail.com?subject=Hello%20Medha&body=Hi%20Medha%2C%20..."
@@ -264,6 +265,56 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
                 <div className="w-full sm:w-[48%] max-w-full">
                   <a
+                    href="https://github.com/medprod/prj-data-mining"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card className="bg-white shadow-none rounded-none p-2">
+                      <img
+                        src="/ml.png"
+                        alt="Data Mining Repository Thumbnail"
+                        className="w-full h-28 object-cover bg-white"
+                        draggable="false"
+                      />
+                      <div className="p-2 pb-1">
+                        <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          data-mining-repo <span className="text-sm sm:text-base">↗</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1 mb-0">a repo of ml algorithms</div>
+                      </div>
+                    </Card>
+                  </a>
+                </div>
+                <div className="w-full sm:w-[48%] max-w-full sm:ml-auto">
+                  <a
+                    href="https://github.com/medprod/gcp-projects/tree/main/GCP%20PR1%20-%20Employee%20Retention%20Program"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Card className="bg-white shadow-none rounded-none p-2">
+                      <img
+                        src="/churn.png"
+                        alt="Employee Churn Prediction GCP Project Thumbnail"
+                        className="w-full h-28 object-cover bg-white"
+                        draggable="false"
+                      />
+                      <div className="p-2 pb-1">
+                        <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                          churn-prediction-GCP <span className="text-sm sm:text-base">↗</span>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1 mb-0">predicting employee churn.</div>
+                      </div>
+                    </Card>
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
+                <div className="w-full sm:w-[48%] max-w-full">
+                  <a
                     href="https://github.com/medprod/OpenWeather-Airflow"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -467,13 +518,6 @@ export default function Home() {
       title: "Blog",
       content: (
         <div className="space-y-6">
-          <h3 className="text-base sm:text-lg font-bold mb-4">something that stuck with me</h3>
-          <p className="text-xs font-semibold text-muted-foreground mt-4 max-w-full sm:max-w-md text-justify">
-          A professor once told me that all of us fit somewhere on the normal distribution curve. When it comes to love and relationships, he explained, experiences vary widely - some fall at the very bottom while others are rare and extraordinary, like magical, out-of-this-world connections that land in the top 0.1%. Not everyone gets to experience that rare kind of love, which is why it's so special.
-          </p>
-          <p className="text-xs font-semibold text-muted-foreground mt-4 max-w-full sm:max-w-md text-justify">
-          That idea really stuck with me. I want to belong to that elusive 0.1% in meaning, in connection, and in the work I do. I want to build a life that's intentional and deeply aligned, even if it takes time to find. This is just a part of that journey.
-          </p>
           <h2 className="text-xl sm:text-2xl font-bold">my blogs!</h2>
           <p className="text-muted-foreground">i should probably pick this up again :3</p>
           <button
