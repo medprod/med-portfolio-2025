@@ -2,11 +2,20 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState("about");
+  const [activeSection, setActiveSection] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem('activeSection') || "about";
+    }
+    return "about";
+  });
+
+  useEffect(() => {
+    localStorage.setItem('activeSection', activeSection);
+  }, [activeSection]);
 
   const sections = {
     about: {
