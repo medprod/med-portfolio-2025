@@ -64,6 +64,13 @@ export default function Home() {
                 @medha-prodduturi <span className="align-super">↗</span>
               </a>
             </div>
+            {/* Photo collage row */}
+            <div className="flex flex-row flex-wrap gap-4 mt-6 justify-center">
+              <img src="/photo1.png" alt="Photo 1" className="w-24 h-24 object-cover rounded-lg shadow" />
+              <img src="/photo2.png" alt="Photo 2" className="w-24 h-24 object-cover rounded-lg shadow" />
+              <img src="/photo3.png" alt="Photo 3" className="w-24 h-24 object-cover rounded-lg shadow" />
+              <img src="/photo4.png" alt="Photo 4" className="w-24 h-24 object-cover rounded-lg shadow" />
+            </div>
           </div>
 
         </div>
@@ -108,7 +115,7 @@ export default function Home() {
                     <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
                       extensive ETL
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1 mb-0">coming soon. think I'm going to create a ETL analyzing extramartial affairs lol!</div>
+                    <div className="text-xs text-muted-foreground mt-1 mb-0">coming soon. think I'm going to create a end-to-end workflow analyzing extramartial affairs in different genders and relationships.</div>
                   </div>
                 </Card>
               </div>
