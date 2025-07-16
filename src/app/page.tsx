@@ -94,7 +94,7 @@ export default function Home() {
               </div>
               <div className="w-full sm:w-[48%] max-w-full sm:ml-auto">
                 <Card className="bg-white shadow-none rounded-none p-2">
-                  <div className="w-full h-28 bg-gray-100 flex items-center justify-center" />
+                  <div className="w-full h-28 bg-gray-100 flex items-center justify-center" style={{ minHeight: '7rem' }} />
                   <div className="p-2 pb-1">
                     <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
                       extensive ETL
@@ -178,22 +178,6 @@ export default function Home() {
                     </div>
                   </Card>
                 </a>
-              </div>
-              <div className="w-full sm:w-[48%] max-w-full sm:ml-auto">
-                <Card className="bg-white shadow-none rounded-none p-2">
-                  <img
-                    src="/docscan.png"
-                    alt="Document Scanner Project Thumbnail"
-                    className="w-full h-28 object-cover bg-white"
-                    draggable="false"
-                  />
-                  <div className="p-2 pb-1">
-                    <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                      document scanner
-                    </div>
-                    <div className="text-xs text-muted-foreground mt-1 mb-0">exploring openCV</div>
-                  </div>
-                </Card>
               </div>
             </div>
           </div>
