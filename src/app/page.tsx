@@ -69,7 +69,6 @@ export default function Home() {
               <img src="/photo1.png" alt="Photo 1" className="w-24 h-24 object-cover rounded-lg shadow" />
               <img src="/photo2.png" alt="Photo 2" className="w-24 h-24 object-cover rounded-lg shadow" />
               <img src="/photo3.png" alt="Photo 3" className="w-24 h-24 object-cover rounded-lg shadow" />
-              <img src="/photo4.png" alt="Photo 4" className="w-24 h-24 object-cover rounded-lg shadow" />
             </div>
           </div>
 
