@@ -4,14 +4,6 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
-import { useCallback } from "react";
-
-// Add TypeScript declaration for window.setTheme
-declare global {
-  interface Window {
-    setTheme?: (theme: string) => void;
-  }
-}
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState(() => {
@@ -24,28 +16,6 @@ export default function Home() {
   useEffect(() => {
     localStorage.setItem('activeSection', activeSection);
   }, [activeSection]);
-
-  // Theme toggle handler
-  const [isDark, setIsDark] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return (localStorage.getItem('theme') || 'light') === 'dark';
-    }
-    return false;
-  });
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setIsDark((localStorage.getItem('theme') || 'light') === 'dark');
-    }
-  }, []);
-
-  const toggleTheme = useCallback(() => {
-    const newTheme = isDark ? 'light' : 'dark';
-    if (typeof window !== 'undefined' && window.setTheme) {
-      window.setTheme(newTheme);
-    }
-    setIsDark(newTheme === 'dark');
-  }, [isDark]);
 
   const sections = {
     about: {
@@ -610,18 +580,8 @@ export default function Home() {
       {/* Main Content */}
       <main className="max-w-[65ch] mx-auto px-4 sm:px-5 py-6 sm:py-8">
         {/* Header with Name and Navigation */}
-        <div className="pt-2 pb-2 flex items-center justify-between">
+        <div className="pt-2 pb-2">
           <h1 className="text-2xl sm:text-3xl font-bold mb-2">medha 🐮🐻</h1>
-          {/* Moon icon theme toggle */}
-          <button
-            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-            onClick={toggleTheme}
-            className="ml-auto text-2xl p-2 rounded-full hover:bg-amber-100 transition-colors"
-            style={{ lineHeight: 1 }}
-          >
-            {/* Unicode moon icon */}
-            <span role="img" aria-label="moon">🌙</span>
-          </button>
         </div>
 
         {/* Compact Navigation */}
