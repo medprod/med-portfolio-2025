@@ -15,7 +15,8 @@ export default function Home() {
         <div className="space-y-4 sm:space-y-6">
           <h2 className="text-2xl sm:text-3xl font-bold">hi!</h2>
           <p className="text-base sm:text-lg font-bold text-muted-foreground">
-            I call myself an analytics engineer (i&apos;m trying to be one, atleast).
+            {/* I call myself an analytics engineer (i&apos;m trying to be one, atleast). */}
+            I am a database management analyst.
           </p>
           <div className="text-black font-semibold text-sm sm:text-base">
             I also love designing and implementing new databases. I&apos;ll happily map out ER diagrams and model data because that&apos;s where I get to be both logical and creative! Here are some random (fun?) facts about me:
