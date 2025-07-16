@@ -64,12 +64,33 @@ export default function Home() {
                 @medha-prodduturi <span className="align-super">↗</span>
               </a>
             </div>
-            {/* Photo collage row */}
-            <div className="flex flex-row flex-wrap gap-4 mt-6 justify-center">
-              <img src="/photo1.png" alt="Photo 1" className="w-24 h-24 object-cover rounded-lg shadow" />
-              <img src="/photo2.png" alt="Photo 2" className="w-24 h-24 object-cover rounded-lg shadow" />
-              <img src="/photo3.png" alt="Photo 3" className="w-24 h-24 object-cover rounded-lg shadow" />
-              <img src="/photo4.png" alt="Photo 4" className="w-24 h-24 object-cover rounded-lg shadow" />
+            <div className="relative w-full max-w-xl mx-auto mt-8">
+              {/* Top text (keep your existing content here) */}
+
+              <div className="grid grid-cols-2 gap-x-8 gap-y-8 justify-items-center relative">
+                {/* Photo 1 */}
+                <div className="relative">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-3 bg-amber-700 rounded-sm z-10"></div>
+                  <img src="/photo1.png" alt="Photo 1" className="w-40 h-40 object-cover rounded-md shadow-lg bg-white" />
+                </div>
+                {/* Photo 2 */}
+                <div className="relative">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-3 bg-amber-700 rounded-sm z-10"></div>
+                  <img src="/photo2.png" alt="Photo 2" className="w-40 h-40 object-cover rounded-md shadow-lg bg-white" />
+                </div>
+                {/* Photo 3 */}
+                <div className="relative">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-3 bg-amber-700 rounded-sm z-10"></div>
+                  <img src="/photo3.png" alt="Photo 3" className="w-40 h-40 object-cover rounded-md shadow-lg bg-white" />
+                </div>
+                {/* Photo 4 */}
+                <div className="relative">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-3 bg-amber-700 rounded-sm z-10"></div>
+                  <img src="/photo4.png" alt="Photo 4" className="w-40 h-40 object-cover rounded-md shadow-lg bg-white" />
+                </div>
+              </div>
+
+              {/* Bottom text (keep your existing content here) */}
             </div>
           </div>
 
