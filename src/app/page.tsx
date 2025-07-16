@@ -15,15 +15,14 @@ export default function Home() {
         <div className="space-y-4 sm:space-y-6">
           <h2 className="text-2xl sm:text-3xl font-bold">hi!</h2>
           <p className="text-base sm:text-lg font-bold text-muted-foreground">
-            {/* I call myself an analytics engineer (i&apos;m trying to be one, atleast). */}
-            I am a database management analyst.
+            I call myself an analytics engineer (i&apos;m trying to be one, atleast).
           </p>
           <div className="text-black font-semibold text-sm sm:text-base">
-            I also love designing and implementing new databases. I&apos;ll happily map out ER diagrams and model data because that&apos;s where I get to be both logical and creative! Here are some random (fun?) facts about me:
+            I love designing and implementing new databases. I&apos;ll happily map out ER diagrams and model data because that&apos;s where I get to be both logical and creative! Here are some random (fun?) facts about me:
             <ul className="list-disc list-inside mt-2 space-y-1">
               <li>I love cows & I will own a few one day. Dream pets.</li>
               <li>The ultimate dream is to work within the intersection of media & tech!</li>
-              <li>SQL is my favorite programming language.</li>
+              <li>SQL is my favorite language to work with.</li>
               <li>My life depends on my Notion.</li>
             </ul>
           </div>
