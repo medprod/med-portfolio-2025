@@ -116,6 +116,33 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            {/* New card row for advance database management */}
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
+              <div className="w-full sm:w-[48%] max-w-full">
+                <a
+                  href="https://github.com/medprod/adv.dbms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <Card className="bg-white shadow-none rounded-none p-2">
+                    <img
+                      src="/dbms.png" // Placeholder image, replace if a more relevant one is available
+                      alt="Advance Database Management Project Thumbnail"
+                      className="w-full h-28 object-cover bg-white"
+                      draggable="false"
+                    />
+                    <div className="p-2 pb-1">
+                      <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                        advance database management <span className="text-sm sm:text-base">↗</span>
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-1 mb-0">repo of implementation of advance dbms concepts</div>
+                    </div>
+                  </Card>
+                </a>
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
               <div className="w-full sm:w-[48%] max-w-full">
                 <a
