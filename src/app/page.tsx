@@ -108,7 +108,7 @@ export default function Home() {
                     <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
                       extensive ETL
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1 mb-0">coming soon.</div>
+                    <div className="text-xs text-muted-foreground mt-1 mb-0">coming soon. think I'm going to create a ETL analyzing extramartial affairs lol!</div>
                   </div>
                 </Card>
               </div>
