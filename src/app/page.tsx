@@ -92,6 +92,17 @@ export default function Home() {
                   </Card>
                 </a>
               </div>
+              <div className="w-full sm:w-[48%] max-w-full sm:ml-auto">
+                <Card className="bg-white shadow-none rounded-none p-2">
+                  <div className="w-full h-28 bg-gray-100 flex items-center justify-center" />
+                  <div className="p-2 pb-1">
+                    <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                      extensive ETL
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-1 mb-0">coming soon.</div>
+                  </div>
+                </Card>
+              </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
               <div className="w-full sm:w-[48%] max-w-full">
