@@ -4,6 +4,14 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
+import { useCallback } from "react";
+
+// Add TypeScript declaration for window.setTheme
+declare global {
+  interface Window {
+    setTheme?: (theme: string) => void;
+  }
+}
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState(() => {
@@ -16,6 +24,28 @@ export default function Home() {
   useEffect(() => {
     localStorage.setItem('activeSection', activeSection);
   }, [activeSection]);
+
+  // Theme toggle handler
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return (localStorage.getItem('theme') || 'light') === 'dark';
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsDark((localStorage.getItem('theme') || 'light') === 'dark');
+    }
+  }, []);
+
+  const toggleTheme = useCallback(() => {
+    const newTheme = isDark ? 'light' : 'dark';
+    if (typeof window !== 'undefined' && window.setTheme) {
+      window.setTheme(newTheme);
+    }
+    setIsDark(newTheme === 'dark');
+  }, [isDark]);
 
   const sections = {
     about: {
@@ -580,70 +610,80 @@ export default function Home() {
       {/* Main Content */}
       <main className="max-w-[65ch] mx-auto px-4 sm:px-5 py-6 sm:py-8">
         {/* Header with Name and Navigation */}
-        <div className="pt-2 pb-2">
+        <div className="pt-2 pb-2 flex items-center justify-between">
           <h1 className="text-2xl sm:text-3xl font-bold mb-2">medha 🐮🐻</h1>
-          
-          {/* Compact Navigation */}
-          <nav className="mb-1">
-            <div className="flex flex-wrap items-center gap-1 sm:gap-2 pl-0.5">
-              <Button 
-                variant="ghost"
-                size="default"
-                onClick={() => setActiveSection("about")}
-                className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
-                  activeSection === "about" 
-                    ? "text-white bg-amber-800 underline decoration-2" 
-                    : "text-amber-900 hover:bg-amber-50"
-                }`}
-              >
-                about me!
-              </Button>
-              <Button 
-                variant="ghost"
-                size="default"
-                onClick={() => setActiveSection("projects")}
-                className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
-                  activeSection === "projects" 
-                    ? "text-white bg-amber-800 underline decoration-2" 
-                    : "text-amber-900 hover:bg-amber-50"
-                }`}
-              >
-                projects
-              </Button>
-              <Button 
-                variant="ghost"
-                size="default"
-                onClick={() => setActiveSection("skills")}
-                className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
-                  activeSection === "skills" 
-                    ? "text-white bg-amber-800 underline decoration-2" 
-                    : "text-amber-900 hover:bg-amber-50"
-                }`}
-              >
-                skills
-              </Button>
-              <Button 
-                variant="ghost"
-                size="default"
-                onClick={() => setActiveSection("blog")}
-                className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
-                  activeSection === "blog" 
-                    ? "text-white bg-amber-800 underline decoration-2" 
-                    : "text-amber-900 hover:bg-amber-50"
-                }`}
-              >
-                blog
-              </Button>
-              <button
-                type="button"
-                onClick={() => window.open('https://github.com/medprod', 'githubPopup', 'width=800,height=600')}
-                className="text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold text-amber-900 hover:bg-amber-50 inline-flex items-center"
-              >
-                github
-              </button>
-            </div>
-          </nav>
+          {/* Moon icon theme toggle */}
+          <button
+            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+            onClick={toggleTheme}
+            className="ml-auto text-2xl p-2 rounded-full hover:bg-amber-100 transition-colors"
+            style={{ lineHeight: 1 }}
+          >
+            {/* Unicode moon icon */}
+            <span role="img" aria-label="moon">🌙</span>
+          </button>
         </div>
+
+        {/* Compact Navigation */}
+        <nav className="mb-1">
+          <div className="flex flex-wrap items-center gap-1 sm:gap-2 pl-0.5">
+            <Button 
+              variant="ghost"
+              size="default"
+              onClick={() => setActiveSection("about")}
+              className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
+                activeSection === "about" 
+                  ? "text-white bg-amber-800 underline decoration-2" 
+                  : "text-amber-900 hover:bg-amber-50"
+              }`}
+            >
+              about me!
+            </Button>
+            <Button 
+              variant="ghost"
+              size="default"
+              onClick={() => setActiveSection("projects")}
+              className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
+                activeSection === "projects" 
+                  ? "text-white bg-amber-800 underline decoration-2" 
+                  : "text-amber-900 hover:bg-amber-50"
+              }`}
+            >
+              projects
+            </Button>
+            <Button 
+              variant="ghost"
+              size="default"
+              onClick={() => setActiveSection("skills")}
+              className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
+                activeSection === "skills" 
+                  ? "text-white bg-amber-800 underline decoration-2" 
+                  : "text-amber-900 hover:bg-amber-50"
+              }`}
+            >
+              skills
+            </Button>
+            <Button 
+              variant="ghost"
+              size="default"
+              onClick={() => setActiveSection("blog")}
+              className={`text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold ${
+                activeSection === "blog" 
+                  ? "text-white bg-amber-800 underline decoration-2" 
+                  : "text-amber-900 hover:bg-amber-50"
+              }`}
+            >
+              blog
+            </Button>
+            <button
+              type="button"
+              onClick={() => window.open('https://github.com/medprod', 'githubPopup', 'width=800,height=600')}
+              className="text-sm sm:text-lg px-1 sm:px-2 py-1 rounded-none font-extrabold text-amber-900 hover:bg-amber-50 inline-flex items-center"
+            >
+              github
+            </button>
+          </div>
+        </nav>
 
         {/* Dynamic Content Section */}
         <div className="pt-6 pb-2">
