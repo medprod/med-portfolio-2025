@@ -94,7 +94,7 @@ export default function Home() {
                     />
                     <div className="p-2 pb-1">
                       <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                        advance database management <span className="text-sm sm:text-base">↗</span>
+                        advance dbms <span className="text-sm sm:text-base">↗</span>
                       </div>
                       <div className="text-xs text-muted-foreground mt-1 mb-0">repo of implementation of advance dbms concepts</div>
                     </div>
@@ -102,15 +102,23 @@ export default function Home() {
                 </a>
               </div>
               <div className="w-full sm:w-[48%] max-w-full sm:ml-auto">
-                <Card className="bg-white shadow-none rounded-none p-2">
-                  <div className="w-full h-28 bg-gray-100 flex items-center justify-center" style={{ minHeight: '7rem' }} />
-                  <div className="p-2 pb-1">
-                    <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
-                      extensive ETL
+                <a
+                  href="https://github.com/medprod/affairs-etl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <Card className="bg-white shadow-none rounded-none p-2">
+                    <div className="w-full h-28 bg-gray-100 flex items-center justify-center" style={{ minHeight: '7rem' }} />
+                    <div className="p-2 pb-1">
+                      <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
+                        affairs ETL <span className="text-sm sm:text-base">↗</span>
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-1 mb-0">an end-to-end workflow analyzing extramartial affairs in different genders and relationships.</div>
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1 mb-0">coming soon. think I'm going to create a end-to-end workflow analyzing extramartial affairs in different genders and relationships.</div>
-                  </div>
-                </Card>
+                  </Card>
+                </a>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
