@@ -115,7 +115,7 @@ export default function Home() {
                       <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
                         affairs ETL <span className="text-sm sm:text-base">↗</span>
                       </div>
-                      <div className="text-xs text-muted-foreground mt-1 mb-0">an end-to-end workflow analyzing extramartial affairs in different genders and relationships.</div>
+                      <div className="text-xs text-muted-foreground mt-1 mb-0">an end-to-end workflow analyzing extramartial affairs.</div>
                     </div>
                   </Card>
                 </a>
