@@ -110,7 +110,12 @@ export default function Home() {
                   style={{ textDecoration: 'none' }}
                 >
                   <Card className="bg-white shadow-none rounded-none p-2">
-                    <div className="w-full h-28 bg-gray-100 flex items-center justify-center" style={{ minHeight: '7rem' }} />
+                    <img
+                      src="/affairs.png"
+                      alt="Affairs ETL Project Thumbnail"
+                      className="w-full h-28 object-cover bg-white"
+                      draggable="false"
+                    />
                     <div className="p-2 pb-1">
                       <div className="text-base sm:text-lg font-extrabold flex items-center gap-2 text-amber-900">
                         affairs ETL <span className="text-sm sm:text-base">↗</span>
